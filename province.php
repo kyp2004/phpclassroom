@@ -39,8 +39,6 @@
     echo "</td>";
     echo "</tr>";
   }
-  echo "</table>"; 
-  echo "</center>"; 
-  echo "</boder>"; 
+  echo "</table></center>"; 
   
 ?>
