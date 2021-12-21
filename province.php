@@ -9,7 +9,7 @@
   foreach($data as $key=>$val){
     echo "<tr>";
     echo "<td>";
-    echo $key;
+    echo $key+1;
     echo "</td>";
     echo "<td>";
     echo $val->province;
