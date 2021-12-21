@@ -6,7 +6,7 @@
   echo "<center><h3>รายงานสถานการโควิด-19 แยกจังหวัด</h3></center>";
   echo '<body style="background-color:lavender">';
   echo "<center><table border='1'>";
-  echo "<tr><td><b>ลำดับ</b></td><td><h4>จังหวัด</h4></td><td><h4>ผู้ป่วยใหม่</h4></td><td><h4>ผู้ป่วยรวม</h4></td><td><h4>ผู้ป่วยใหม่ในประเทศ</h4></td><td><h4>ผู้ป่วยรวมในประเทศ</h4></td><td><h4>ผู้เสียชีวิตใหม่</h4></td><td><h4>ผู้เสียชีวิตรวม</h4></td></tr>";
+  echo "<tr><td><b>ลำดับ</b></td><td style='background-color:Cornsilk'><b>จังหวัด</b></td><td><b>ผู้ป่วยใหม่</b></td><td><b>ผู้ป่วยรวม</b></td><td><b>ผู้ป่วยใหม่ในประเทศ</b></td><td><b>ผู้ป่วยรวมในประเทศ</b></td><td><b>ผู้เสียชีวิตใหม่</b></td><td><b>ผู้เสียชีวิตรวม</b></td></tr>";
   foreach($data as $key=>$val){
     echo "<tr>";
     echo "<td>";
@@ -37,7 +37,7 @@
   }
   echo "</table></center>"; 
 
-  echo "<center><tr><td><br><br>วันที่อัพเดต</b></td></center>";
+  echo "<center><tr><td><br><br><b>วันที่อัพเดต</b></b></td></center>";
   echo "<center><tr>";
   echo "<td>";
   echo $val->txn_date;
