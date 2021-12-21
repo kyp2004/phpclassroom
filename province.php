@@ -8,13 +8,13 @@
   foreach($data as $key=>$val){
     echo "<tr>";
     echo "<td>";
-    echo $key='1';
+    echo $key;
     echo "</td>";
     echo "<td>";
     echo $val->province;
     echo "</td>";
     echo "<td>";
-    echo $val->province;
+    echo $val->new_case;
     echo "</td>";
     echo "</tr>";
   }
