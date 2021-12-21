@@ -37,7 +37,7 @@
   }
   echo "</table></center>"; 
 
-  echo "<tr><td><b><br><br><br>วันที่อัพเดต</br></br></br></b></td>";
+  echo "<center><tr><td>วันที่อัพเดต</b></td></center>";
   echo "<tr>";
   echo "<td>";
   echo $val->txn_date;
