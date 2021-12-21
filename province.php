@@ -4,16 +4,9 @@
   $data = json_decode($json);
 
   echo "<center><h3>รายงานสถานการโควิด-19 แยกจังหวัด</h3></center>";
-  echo "<center><table border='1'></center>";
+  echo "<center><table border='1'bgcolor="pink"></center>";
   echo "<tr><td><h4>ลำดับ</h4></td><td><h4>จังหวัด</h4></td><td><h4>ผู้ป่วยใหม่</h4></td><td><h4>ผู้ป่วยรวม</h4></td><td><h4>ผู้ป่วยใหม่ในประเทศ</h4></td><td><h4>ผู้ป่วยรวมในประเทศ</h4></td><td><h4>ผู้เสียชีวิตใหม่</h4></td><td><h4>ผู้เสียชีวิตรวม</h4></td><td><h4>วันที่อัพเดท</h4></td></tr>";
   foreach($data as $key=>$val){
-    <body>
-<table border="2">
-   <tr bgcolor="pink"> <td> ลำดับ </td> <td> จังหวัด </td> </tr>
-   <tr bgcolor="blue"> <td> ผู้ป่วยใหม่ </td> <td>ผู้ป่วยรวม </td> </tr>
-</table>
-</body>
-
     echo "<tr>";
     echo "<td>";
     echo $key+1;
