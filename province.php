@@ -16,6 +16,24 @@
     echo "<td>";
     echo $val->new_case;
     echo "</td>";
+    echo "<td>";
+    echo $val->total_case;
+    echo "</td>";
+    echo "<td>";
+    echo $val->new_case_excludeabroad;
+    echo "</td>";
+    echo "<td>";
+    echo $val->total_case_excludeabroad;
+    echo "</td>";
+    echo "<td>";
+    echo $val->new_death;
+    echo "</td>";
+    echo "<td>";
+    echo $val->total_death;
+    echo "</td>";
+    echo "<td>";
+    echo $val->txn_date;
+    echo "</td>";
     echo "</tr>";
   }
   echo "</table>"; 
