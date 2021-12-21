@@ -5,7 +5,7 @@
   
   echo "<table border='1'>";
   echo "<tr><td>ลำดับ</td><td>จังหวัด</td></tr>";
-  foreach($data as $key+1=>$val){
+  foreach($data as $key=>$val+1){
     echo "<tr>";
     echo "<td>";
     echo $key;
