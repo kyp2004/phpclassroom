@@ -6,7 +6,7 @@
   echo "<center><h2>รายงานสถานการโควิด-19 แยกจังหวัด</h2></center>";
   echo '<body style="background-color:LightCoral">';
   echo "<center><table border='1'>";
-  echo "<tr><td style='background-color:Lavender Blush'><b>ลำดับ</b></td><td style='background-color:MistyRose'><b>จังหวัด</b></td><td style='background-color:Lavender Blush'><b>ผู้ป่วยใหม่</b></td><td style='background-color:MistyRose'><b>ผู้ป่วยรวม</b></td><td style='background-color:Lavender Blush'><b>ผู้ป่วยใหม่ในประเทศ</b></td><td style='background-color:MistyRose'><b>ผู้ป่วยรวมในประเทศ</b></td><td style='background-color:Lavender Blush'><b>ผู้เสียชีวิตใหม่</b></td><td style='background-color:MistyRose'><b>ผู้เสียชีวิตรวม</b></td></tr>";
+  echo "<tr><td style='background-color:Lavender Blush'><b>ลำดับ</b></td><td style='background-color:Lavender Blush'><b>จังหวัด</b></td><td style='background-color:Lavender Blush'><b>ผู้ป่วยใหม่</b></td><td style='background-color:MistyRose'><b>ผู้ป่วยรวม</b></td><td style='background-color:Lavender Blush'><b>ผู้ป่วยใหม่ในประเทศ</b></td><td style='background-color:MistyRose'><b>ผู้ป่วยรวมในประเทศ</b></td><td style='background-color:Lavender Blush'><b>ผู้เสียชีวิตใหม่</b></td><td style='background-color:MistyRose'><b>ผู้เสียชีวิตรวม</b></td></tr>";
   foreach($data as $key=>$val){
     echo "<tr>";
     echo "<td style='background-color:Seashell'>";
