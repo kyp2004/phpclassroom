@@ -5,13 +5,14 @@
         background-color: lightblue;
      }
      #box1{
-        width:50px;
-        height:50px;
+        width:250px;
+        height:250px;
         margin-bottom: 10px;
+        padding : 20px;
      }
      #box2{
-        width:100px;
-        height:50px;
+        width:400px;
+        height:250px;
      }
    </style>
   </head>
