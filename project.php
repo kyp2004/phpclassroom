@@ -87,7 +87,7 @@
             <h4 class="my-0 fw-normal">หายป่วยกลับบ้าน</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->new_case; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@
             <h4 class="my-0 fw-normal">ผู้ป่วยสะสม</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->total_case; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@
             <h4 class="my-0 fw-normal">เสียชีวิต</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->total_death; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
