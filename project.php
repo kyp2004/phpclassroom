@@ -51,12 +51,12 @@
       <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="profile.jpg" class="img-fluid rounded-start" alt="...">
+            <img src="271832718_481036353733833_5787013073062905570_n.jpg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">จัดทำโดย</h5>
-              <p class="card-text">นางสาวกัญญาภัทร  เมฆมล </p>
+              <p class="card-text">กัญญาภัทร เมฆมล</p>
               <p class="card-text"><small class="text-muted">ม.6/13 เลขที่ 18 , 55795</small></p>
             </div>
           </div>
@@ -84,10 +84,10 @@
       <div class="col-3">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3 bg-success text-white">
-            <h4 class="my-0 fw-normal">หายป่วยกลับบ้าน</h4>
+            <h4 class="my-0 fw-normal">เสียชีวิตรวม</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title"><?php echo $data[0]->new_case; ?><small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->total_death; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
@@ -107,17 +107,19 @@
             <h4 class="my-0 fw-normal">เสียชีวิต</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title"><?php echo $data[0]->total_death; ?><small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->new_death; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
     </div>
 
   </main>
-
+ 
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <header>
       <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+       
+        
         <h1 class="display-7 fw-normal">รายงานข้อมูล Covid-19 แยกจังหวัด</h1>
       </div>
     </header>
@@ -125,40 +127,44 @@
       <div class="col">
         <table class="table table-striped rounded-3">
           <tr>
-            <th>#</th>
+            <th>ลำดับ</th>
             <th>จังหวัด</th>
             <th>ผู้ป่วยใหม่</th>
-            <th>หายป่วยกลับบ้าน</th>
+            <th>เสียชีวิตรวม</th>
             <th>ผู้ป่วยสะสม</th>
             <th>เสียชีวิต</th>
           </tr>
           <!-- แก้ไขส่วนที่ 3 -->
           <!-- Loop -->
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
-        </table>
+          <?php
+      $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
+        $data = json_decode($json);     
+foreach($data as $key=>$val){
+  echo "<tr>";
+  echo "<td>";
+  echo ($key+1);
+  echo "</td>";
+  echo "<td>";
+  echo $val->province;
+  echo "</td>";
+  echo "<td>";
+  echo $val->new_case;
+  echo "</td>";
+  echo "<td>";
+  echo $val->total_death;
+  echo "</td>";
+  echo "<td>";
+  echo $val->total_case;
+  echo "</td>";
+  echo "<td>";
+  echo $val->new_death;
+  echo "</td>";
+ 
+  echo "</tr>";
+}
+?>
+
+    </table>
       </div>
     </div>
 
